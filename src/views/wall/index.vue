@@ -30,9 +30,9 @@ import { MESSAGE_TYPE } from 'vue-baberrage'
 export default {
   data() {
     return {
-      happyImg: require('./imgs/happy.png'),
-      duilianImg: require('./imgs/duilian.png'),
-      qinImg: require('./imgs/qin.png'),
+      happyImg: require('./imgs/1.jpg'),
+      duilianImg: require('./imgs/1.jpg'),
+      qinImg: require('./imgs/1.jpg'),
       img: require('./imgs/1.jpg'),
       msg: '新年快乐',
       barrageIsShow: true,
@@ -79,7 +79,7 @@ export default {
 <style lang="scss">
 .wall {
   height: 100%;
-  background: #fb5232 url("./imgs/bg.png") no-repeat;
+  background: #fb5232 url("./imgs/1.jpg") no-repeat;
   background-size: 100% 100%;
   padding-top: 110px;
 
