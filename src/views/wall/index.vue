@@ -19,6 +19,7 @@
         :is-show="barrageIsShow"
         :barrage-list="barrageList"
         :loop="barrageLoop"
+        :message-height="messageHeight"
       />
     </div>
   </div>
@@ -33,9 +34,10 @@ export default {
       duilianImg: require('./imgs/duilian.png'),
       qinImg: require('./imgs/qin.png'),
       img: require('./imgs/1.jpg'),
-      msg: 'Hello vue-baberrage',
+      msg: '新年快乐',
       barrageIsShow: true,
       currentId: 0,
+      messageHeight: 90,
       barrageLoop: false,
       barrageList: []
     }
@@ -66,7 +68,7 @@ export default {
         id: ++this.currentId,
         avatar: this.img,
         msg: this.msg,
-        time: 10,
+        time: 8,
         type: MESSAGE_TYPE.NORMAL
       })
     }
@@ -74,7 +76,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .wall {
   height: 100%;
   background: #fb5232 url("./imgs/bg.png") no-repeat;
@@ -114,6 +116,24 @@ export default {
   }
 
   .swiper {
+    .baberrage-stage {
+      //overflow: unset;
+      .baberrage-item {
+        background: unset;
+        .baberrage-avatar {
+          width: 80px;
+          height: 80px;
+          img {
+            width: 80px;
+          }
+        }
+        .baberrage-msg {
+          margin-left: -30px;
+          margin-top: 50px;
+          line-height: 80px;
+        }
+      }
+    }
     position: absolute;
     left: 0;
     right: 0;
