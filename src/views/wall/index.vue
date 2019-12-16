@@ -30,14 +30,15 @@ export default {
     getData() {
       setInterval(() => {
         this.addToList()
-      }, 100)
+      }, 1000)
     },
+
     addToList() {
       this.barrageList.push({
         id: ++this.currentId,
         avatar: this.img,
         msg: this.msg,
-        time: 10,
+        time: 15,
         type: MESSAGE_TYPE.NORMAL
       })
     }
